@@ -130,39 +130,7 @@ CSharp_visa_example.exe --help
 
 ---
 
-## Project Structure
-
-```
-CSharp_Examples/
-├── README_CSharp.md (this file)
-├── CSharp_basic_configuration_example/
-│   ├── CSharp_basic_configuration_example.sln
-│   └── CSharp_basic_configuration_example/
-│       ├── Program.cs
-│       ├── App.config
-│       └── CSharp_basic_configuration_example.csproj
-│
-├── CSharp_scpi_command_example/
-│   ├── CSharp_scpi_command_example.sln
-│   └── CSharp_scpi_command_example/
-│       ├── Program.cs
-│       ├── App.config
-│       └── CSharp_scpi_command_example.csproj
-│
-└── CSharp_visa_example/
-    ├── CSharp_visa_example.sln
-    ├── Libs/  ← NationalInstruments DLLs
-    │   ├── NationalInstruments.Common.dll
-    │   └── NationalInstruments.VisaNS.dll
-    └── CSharp_visa_example/
-        ├── Program.cs
-        ├── App.config
-        └── CSharp_visa_example.csproj
-```
-
----
-
-## 🛠️ Troubleshooting
+## Troubleshooting
 
 ### "Could not establish connection" Error
 - Verify the instrument is powered on
