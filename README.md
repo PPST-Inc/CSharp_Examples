@@ -76,7 +76,7 @@ CSharp_basic_configuration_example.exe --help
 ```
 
 **What it does:**
-- Connects to the instrument
+- Connects to the Power Unit
 - Configures AC voltage mode
 - Sets voltage to 100V
 - Sets frequency to 60Hz
@@ -113,9 +113,6 @@ CSharp_visa_example.exe --resource "TCPIP0::192.168.1.100::inst0::INSTR"
 # GPIB connection
 CSharp_visa_example.exe --resource "GPIB0::10::INSTR"
 
-# USB connection
-CSharp_visa_example.exe --resource "USB0::0x1234::0x5678::SN12345::INSTR"
-
 # Custom timeout
 CSharp_visa_example.exe --timeout 10000
 
@@ -126,14 +123,13 @@ CSharp_visa_example.exe --help
 **Common VISA Resource String Formats:**
 - **TCPIP**: `TCPIP0::<ip_address>::inst0::INSTR`
 - **GPIB**: `GPIB0::<address>::INSTR`
-- **USB**: `USB0::<vendor_id>::<product_id>::<serial>::INSTR`
 
 ---
 
 ## Troubleshooting
 
 ### "Could not establish connection" Error
-- Verify the instrument is powered on
+- Verify the Power Unit is powered on
 - Check IP address/resource string is correct
 - Ensure firewall allows the connection
 - For VISA: Verify NI-VISA Runtime is installed

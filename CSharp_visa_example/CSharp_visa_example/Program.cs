@@ -125,7 +125,6 @@ namespace ScpiVisaCommandExample
             Console.WriteLine("\nCommon VISA resource string formats:");
             Console.WriteLine("  TCPIP: TCPIP0::<ip_address>::inst0::INSTR");
             Console.WriteLine("  GPIB:  GPIB0::<address>::INSTR");
-            Console.WriteLine("  USB:   USB0::<vendor_id>::<product_id>::<serial>::INSTR");
         }
 
         static void WaitForKeyPress(string message = "\nPress ENTER to close...")
