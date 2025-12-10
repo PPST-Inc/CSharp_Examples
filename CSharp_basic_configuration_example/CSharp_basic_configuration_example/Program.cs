@@ -12,7 +12,7 @@ namespace ScpiTcpExample
     class Program
     {
         // Default configuration
-        const string DEFAULT_IP = "192.168.131.182";
+        const string DEFAULT_IP = "192.168.123.1";
         const int DEFAULT_PORT = 5025;
         const int CONNECTION_TIMEOUT = 5000; // milliseconds
 
@@ -107,7 +107,7 @@ namespace ScpiTcpExample
         static void ShowHelp()
         {
             Console.WriteLine("Usage examples:");
-            Console.WriteLine("  CSharp_basic_configuration_example.exe --ip 192.168.1.100");
+            Console.WriteLine("  CSharp_basic_configuration_example.exe --ip 192.168.1.123");
             Console.WriteLine("  CSharp_basic_configuration_example.exe --port 5025");
         }
 

@@ -11,7 +11,7 @@ namespace ScpiVisaCommandExample
     class Program
     {
         // Default configuration
-        const string DEFAULT_RESOURCE = "TCPIP0::192.168.131.193::inst0::INSTR";
+        const string DEFAULT_RESOURCE = "TCPIP0::192.168.123.1::inst0::INSTR";
         const int CONNECTION_TIMEOUT = 5000; // milliseconds
 
         static void Main(string[] args)
@@ -120,7 +120,7 @@ namespace ScpiVisaCommandExample
         {
             Console.WriteLine("Usage examples:");
             Console.WriteLine("  CSharp_scpi_command_by_visa_example.exe");
-            Console.WriteLine("  CSharp_scpi_command_by_visa_example.exe --resource \"TCPIP0::192.168.1.100::inst0::INSTR\"");
+            Console.WriteLine("  CSharp_scpi_command_by_visa_example.exe --resource \"TCPIP0::192.168.123.1::inst0::INSTR\"");
             Console.WriteLine("  CSharp_scpi_command_by_visa_example.exe --resource \"GPIB0::10::INSTR\"");
             Console.WriteLine("\nCommon VISA resource string formats:");
             Console.WriteLine("  TCPIP: TCPIP0::<ip_address>::inst0::INSTR");
